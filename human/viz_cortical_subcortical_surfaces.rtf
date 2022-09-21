@@ -1,0 +1,23 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 to visualize surfaces using pre-existing meshes and statistical maps: \
+1) open atlas \'97> BrainMesh_ICBM152.mz3. set render to Default or Gouraud (what these renders look like depends on version of surfice/OS). \
+2) add overlay (starring with the average map, \'91avg_enc_weights_z_space_MNI152.nii.gz\'92) twice. apply the winter map to one and hot map to the other. \
+3) set the darkest/brightest threshold for winter to (-.001, -1) and hot (.001, 1). or flip the thresholds for these colormaps for viz. purposes if needed. \
+4) view -> left  or right. \
+5) in preferences, set bitmap zoom factor to 6. save bitmap as png lossless with the following format: avg_enc_cortex_surface_L or \{type\}_enc_\{structure\}_surface_\{direction\}.png. in the case of subjects, type = sub-\{n\}, e.g. sub-790_enc_cortex_surface_R.png. \
+\
+for thalamus and striatum, use mean_lh+rh+thal.obj and mean_lh+rh+striatum.obj atlases. these are surfaces generated from mean volumes acquired during t1 scans.  \
+\
+if you want to generate surfaces from a t1 volume:\
+1) go to advanced -> convert voxelwise volume to mesh. \
+2) select the volume (*.nii.gz).\
+3) set the threshold to 2 voxels, min cluster size to 1, and decimation to 80. chosen for the tradeoff between precision and a manageable file size. \
+4) save as multiple objects (as .obj). this is a common file type for meshes. \
+5) success! now you can overlay statistical maps on the surface of this volume. \
+}
