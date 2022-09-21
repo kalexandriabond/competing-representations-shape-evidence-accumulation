@@ -1,5 +1,5 @@
 
-Instructions for visualizing the cortical / thalamic / striatal surfaces using [SurfIce](https://www.nitrc.org/projects/surfice/). 
+Instructions for visualizing the cortical / thalamic / striatal surfaces using SurfIce.
 
 To visualize surfaces using pre-existing meshes and statistical maps: 
 1) open atlas —> BrainMesh_ICBM152.mz3. set render to Default or Gouraud (what these renders look like depends on version of surfice/OS). 
