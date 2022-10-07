@@ -4,3 +4,5 @@ The ability to change your mind when the local environment changes relies critic
 *** 
 
 See our [OpenNeuro respository](https://openneuro.org/datasets/ds004283/versions/1.0.2) for raw and preprocessed hemodynamic and physiological data. 
+
+See the preprint [here](https://www.biorxiv.org/content/10.1101/2022.10.03.510668v1).
